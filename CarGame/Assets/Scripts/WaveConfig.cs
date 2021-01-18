@@ -20,15 +20,23 @@ public class WaveConfig : ScriptableObject
     //enemy movement speed
     [SerializeField] float carMoveSpeed = 2f;
 
-    public GameObject GetEnemyPrefab()
+    public GameObject GetCarPrefab()
     {
         return carPrefab;
     }
 
-    public GameObject GetPathPrefab()
+    public List<Transform> GetWaypoints()
     {
-        return pathPrefab;
+        var waveWayPoints = new List<Transform>();
+
+        foreach (Transform child in pathPrefab.transform)
+        {
+            waveWayPoints.Add(child);
+        }
+
+        return waveWayPoints;
     }
+
 
     public float GetTimeBetweenSpawns()
     {
@@ -48,17 +56,5 @@ public class WaveConfig : ScriptableObject
     public float GetEnemyMoveSpeed()
     {
         return carMoveSpeed;
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

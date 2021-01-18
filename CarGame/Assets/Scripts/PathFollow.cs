@@ -6,17 +6,19 @@ public class PathFollow : MonoBehaviour
 {
     [SerializeField] List<Transform> waypoints;
     [SerializeField] float moveSpeed = 2f;
+    [SerializeField] WaveConfig waveConfig;
     int waypointIndex = 0;
 
 
     void Start()
     {
         transform.position = waypoints[waypointIndex].transform.position;
+        waypoints = waveConfig.GetWaypoints();
     }
 
     void Update()
     {
-        
+        CarMove();
     }
 
     void CarMove()
@@ -39,6 +41,11 @@ public class PathFollow : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public void SetWaveConfig(WaveConfig waveConfigToSet)
+    {
+        waveConfig = waveConfigToSet;
     }
 
 }
