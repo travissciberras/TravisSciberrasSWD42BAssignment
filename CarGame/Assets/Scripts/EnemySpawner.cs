@@ -44,6 +44,8 @@ public class EnemySpawner : MonoBehaviour
 
     private IEnumerator SpawnAllCarsInWave(WaveConfig waveConfig)
     {
+        for (int EnemyCount = 1; EnemyCount <= waveConfig.GetNumberOfEnemies(); EnemyCount++)
+        {
             //spawn the car from waveConfig
             //at the position specified by the waveConfig waypoints
             var newCar = Instantiate(
@@ -54,14 +56,17 @@ public class EnemySpawner : MonoBehaviour
             newCar.GetComponent<PathFollow>().SetWaveConfig(waveConfig);
 
             yield return new WaitForSeconds(waveConfig.GetTimeBetweenSpawns());
+        }
+
     }
 
     private IEnumerator SpawnAllWaves()
     {
-        for (int waveIndex = startingWave; waveIndex < waveConfigs.Count; waveIndex++)
+        foreach(WaveConfig currentWave in waveConfigs)
         {
-            var currentWave = waveConfigs[waveIndex];
+            //var currentWave = waveConfigs[waveIndex];
             yield return StartCoroutine(SpawnAllCarsInWave(currentWave));
+
         }
     }
 
@@ -71,11 +76,11 @@ public class EnemySpawner : MonoBehaviour
 
     }
 
-    void placespawner()
-    {
-        for(int i = 0; i<5; i++)
-        {
+    //void placespawner()
+    //{
+    //    for(int i = 0; i<5; i++)
+    //    {
             
-        }
-    }
+    //    }
+    //}
 }

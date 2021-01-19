@@ -12,8 +12,8 @@ public class PathFollow : MonoBehaviour
 
     void Start()
     {
-        transform.position = waypoints[waypointIndex].transform.position;
         waypoints = waveConfig.GetWaypoints();
+        transform.position = waypoints[waypointIndex].transform.position;
     }
 
     void Update()
@@ -29,7 +29,7 @@ public class PathFollow : MonoBehaviour
 
             targetPosition.z = 0f;
 
-            var movementThisFrame = moveSpeed * Time.deltaTime;
+            var movementThisFrame = waveConfig.GetEnemyMoveSpeed() * Time.deltaTime;
             transform.position = Vector2.MoveTowards(transform.position, targetPosition, movementThisFrame);
 
             if (transform.position == targetPosition)

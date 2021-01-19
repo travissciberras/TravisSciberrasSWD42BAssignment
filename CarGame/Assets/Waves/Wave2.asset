@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Wave2
   m_EditorClassIdentifier: 
   carPrefab: {fileID: 5468441492110716008, guid: 9509b1dc01cd1f142919c16629e02d4a, type: 3}
-  pathPrefab: {fileID: 3758241390057619601, guid: 29681cfbf4deee94badef4e04d8cdc73, type: 3}
+  pathPrefab: {fileID: 70716135070459835, guid: 8d78a0cb77c89a34a88b874ccebb2278, type: 3}
   timeBetweenSpawns: 0.5
   spawnRandomFactor: 0.3
   numberOfCars: 5
