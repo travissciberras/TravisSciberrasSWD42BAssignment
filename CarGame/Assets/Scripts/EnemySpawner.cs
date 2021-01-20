@@ -36,10 +36,10 @@ public class EnemySpawner : MonoBehaviour
 
         //    }
 
-            do
-            {
-                yield return StartCoroutine(SpawnAllWaves());
-            } while (loop);
+        do
+        {
+            yield return StartCoroutine(SpawnAllWaves());
+        } while (loop);
     }
 
     private IEnumerator SpawnAllCarsInWave(WaveConfig waveConfig)
@@ -62,7 +62,7 @@ public class EnemySpawner : MonoBehaviour
 
     private IEnumerator SpawnAllWaves()
     {
-        foreach(WaveConfig currentWave in waveConfigs)
+        foreach (WaveConfig currentWave in waveConfigs)
         {
             //var currentWave = waveConfigs[waveIndex];
             yield return StartCoroutine(SpawnAllCarsInWave(currentWave));
@@ -80,7 +80,7 @@ public class EnemySpawner : MonoBehaviour
     //{
     //    for(int i = 0; i<5; i++)
     //    {
-            
+
     //    }
     //}
 }
