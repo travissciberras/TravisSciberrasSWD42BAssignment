@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 2683110155088677424}
   - component: {fileID: 2683110155088677425}
   - component: {fileID: -2163690609637102042}
-  m_Layer: 0
+  - component: {fileID: -8474375372696011907}
+  m_Layer: 9
   m_Name: Black_viper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,5 +96,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6423d73085aae04a9965acf4a02bfa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 10
+  CarMoveSpeed: 10
   padding: 0.7
+  playerHealth: 50
+--- !u!114 &-8474375372696011907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2683110155088677426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d50e1c84fb71614798a121ebb30be96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 100

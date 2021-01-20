@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 3800702262678581956}
   - component: {fileID: 3800702262678581955}
   - component: {fileID: 3800702262678581957}
+  - component: {fileID: -3669112275070155370}
+  - component: {fileID: 8835888768644152122}
   m_Layer: 8
   m_Name: Truck
   m_TagString: Spawnable
@@ -183,3 +185,40 @@ MonoBehaviour:
   - {fileID: 0}
   moveSpeed: 2
   waveConfig: {fileID: 11400000, guid: 0fc52d1aa7e2ef44eacb1722614e6d66, type: 2}
+--- !u!114 &-3669112275070155370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3800702262678581960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d50e1c84fb71614798a121ebb30be96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 4
+--- !u!114 &8835888768644152122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3800702262678581960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 839b7b7a5f6aecf478ba830ba5e963e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotCounter: 0
+  health: 50
+  scoreValue: 5
+  minTimeBetweenShots: 1000
+  maxTimeBetweenShots: 1001
+  enemyBulletPrefab: {fileID: 9059999399937443720, guid: 094ec256891f5bd49b6d896f9b6f972d, type: 3}
+  Explosion: {fileID: 8566270315608691130, guid: 70d8e7b1815f09941a053536f6601c46, type: 3}
+  enemyBulletSpeed: 0.3
+  enemyDeathSound: {fileID: 8300000, guid: ba505cb3abffa864095feaa3ad78fceb, type: 3}
+  enemyDeathSoundVolume: 0.75
+  shootSound: {fileID: 0}
+  shootSoundVolume: 0.25

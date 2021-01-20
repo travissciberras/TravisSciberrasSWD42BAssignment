@@ -5,7 +5,7 @@ using UnityEngine;
 public class PathFollow : MonoBehaviour
 {
     [SerializeField] List<Transform> waypoints;
-    [SerializeField] float moveSpeed = 2f;
+    [SerializeField] float moveSpeed = 0.5f;
     [SerializeField] WaveConfig waveConfig;
     int waypointIndex = 0;
 

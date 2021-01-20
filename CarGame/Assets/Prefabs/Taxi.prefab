@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 7960284833981872446}
   - component: {fileID: 7960284833981872447}
   - component: {fileID: 7960284833981872445}
+  - component: {fileID: -7568288059628675666}
+  - component: {fileID: 2278457456812853984}
   m_Layer: 8
   m_Name: Taxi
   m_TagString: Spawnable
@@ -168,3 +170,40 @@ MonoBehaviour:
   - {fileID: 0}
   moveSpeed: 2
   waveConfig: {fileID: 11400000, guid: 0e4db669c34d4394194b57626279a5fb, type: 2}
+--- !u!114 &-7568288059628675666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7960284833981872386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d50e1c84fb71614798a121ebb30be96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 3
+--- !u!114 &2278457456812853984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7960284833981872386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 839b7b7a5f6aecf478ba830ba5e963e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotCounter: 0
+  health: 50
+  scoreValue: 5
+  minTimeBetweenShots: 0.2
+  maxTimeBetweenShots: 3
+  enemyBulletPrefab: {fileID: 9059999399937443720, guid: 094ec256891f5bd49b6d896f9b6f972d, type: 3}
+  Explosion: {fileID: 8566270315608691130, guid: 70d8e7b1815f09941a053536f6601c46, type: 3}
+  enemyBulletSpeed: 1
+  enemyDeathSound: {fileID: 8300000, guid: ba505cb3abffa864095feaa3ad78fceb, type: 3}
+  enemyDeathSoundVolume: 0.75
+  shootSound: {fileID: 0}
+  shootSoundVolume: 0.25

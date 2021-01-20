@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 987337697035169895}
   - component: {fileID: 987337697035169894}
   - component: {fileID: 987337697035169892}
+  - component: {fileID: 160301469262880473}
+  - component: {fileID: -7977223718148861101}
   m_Layer: 8
   m_Name: Ambulance
   m_TagString: Untagged
@@ -161,5 +163,42 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  moveSpeed: 2
+  moveSpeed: 0.2
   waveConfig: {fileID: 11400000, guid: 6fc58575409ab4a4582be5e146aec722, type: 2}
+--- !u!114 &160301469262880473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987337697035169899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d50e1c84fb71614798a121ebb30be96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+--- !u!114 &-7977223718148861101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987337697035169899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 839b7b7a5f6aecf478ba830ba5e963e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotCounter: 0
+  health: 50
+  scoreValue: 5
+  minTimeBetweenShots: 0.2
+  maxTimeBetweenShots: 3
+  enemyBulletPrefab: {fileID: 9059999399937443720, guid: 094ec256891f5bd49b6d896f9b6f972d, type: 3}
+  Explosion: {fileID: 8566270315608691130, guid: 70d8e7b1815f09941a053536f6601c46, type: 3}
+  enemyBulletSpeed: 1
+  enemyDeathSound: {fileID: 8300000, guid: ba505cb3abffa864095feaa3ad78fceb, type: 3}
+  enemyDeathSoundVolume: 0.75
+  shootSound: {fileID: 0}
+  shootSoundVolume: 0.25

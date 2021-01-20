@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a52e22bcdc9ca0f4f93c5ed48ec86820, type: 3}
   m_Name: Wave0
   m_EditorClassIdentifier: 
-  carPrefab: {fileID: 8846880451980335724, guid: 08ef53085e6d4194f938aa081cc8944d, type: 3}
+  carPrefab: {fileID: 987337697035169899, guid: 08ef53085e6d4194f938aa081cc8944d, type: 3}
   pathPrefab: {fileID: 2152630940686702055, guid: 9975c991bbb47a148885e91221252c3d, type: 3}
   timeBetweenSpawns: 1
   spawnRandomFactor: 0.7
